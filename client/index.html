@@ -1,0 +1,48 @@
+<html>
+    <head>
+        <base href="/">
+        <title>pinterest</title>
+      
+        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">        
+        <script type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>   
+        <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet" type="text/css">
+        <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" type="text/css">
+        <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.5/angular.min.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.5/angular-resource.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.5/angular-cookies.js"></script>
+        <script src="https://angular-ui.github.io/ui-router/release/angular-ui-router.js"></script>  
+        <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.5/angular-animate.js"></script>
+        <script src="https://angular-ui.github.io/bootstrap/ui-bootstrap-tpls-1.3.3.js"></script>        
+        <!--<script src="/node_modules/angular-masonry/angular-masonry.js"></script>-->
+        <script src="https://npmcdn.com/masonry-layout@4.0/dist/masonry.pkgd.js"></script>        
+        <script src="https://npmcdn.com/imagesloaded@4.1/imagesloaded.pkgd.min.js"></script>        
+        <link href="/node_modules/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+        <script src="https://cdn.socket.io/socket.io-1.4.5.js"></script>
+        <link href="/public/css/main.css" rel="stylesheet" type="text/css">
+    </head>    
+    
+    <body ng-app="mainApp" class="body">
+        <ui-view></ui-view>
+        <my-footer></my-footer>
+        
+        <script src="/client/app/app.js"></script>
+        <script src="/client/app/main/main.js"></script>
+        <script src="/client/app/main/main.controller.js"></script>
+        <script src="/client/components/auth/auth.service.js"></script>
+        <script src="/client/components/auth/user.service.js"></script>
+        <script src="/client/components/navbar/navbar.controller.js"></script>
+        <script src="/client/app/account/account.js"></script>
+        <script src="/client/app/account/login/login.controller.js"></script>
+        <script src="/client/app/account/signup/signup.controller.js"></script>
+        <script src="/client/app/account/setting/setting.controller.js"></script>
+        <script src="/client/components/socket/socket.service.js"></script>
+        <script src="/client/app/wins/wins.js"></script>
+        <script src="/client/app/wins/win.service.js"></script>
+        <script src="/client/app/wins/userwinboard/winBoard.controller.js"></script>
+        <script src="/client/components/modal/modal.controller.js"></script>
+        <script src="/client/app/wins/recentwinboard/recentBoard.controller.js"></script>
+        <script src="/client/app/wins/userwinboard/userBoard.controller.js"></script>
+        <script src="/client/components/footer/footer.controller.js"></script>
+    </body>
+</html>

@@ -1,0 +1,37 @@
+<my-navbar></my-navbar>
+
+<div class="container mainpage">
+    <div class="row">
+        <div class="col-xs-12 picCover">
+            <div class="text">
+                <h1>PINTEREST</h1>
+                <p>For Jiao Ge</p>
+            </div>
+        </div>
+        <div class="col-xs-12">
+            <h2>Most popular PINS:</h2>
+            <div class="grid">
+                <div ng-repeat="win in popularWins" class="grid-item">
+                    <img src={{win.picUrl}}>
+                    <p>{{win.title}}</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-xs-12">
+            <div class="row">
+                <div class="col-xs-6">
+                    <h3>Features what we have:</h3>
+                    <ul>
+                        <li>Check the most recent PINs.</li>
+                        <li>Add your own PIN.</li>
+                        <li>Check out other user' PINs</li>
+                        <li>Like or switch other's PINs</li>
+                    </ul>
+                </div>
+                <div class="col-xs-6">
+                    <p>This project is originated from <a href="#">Free Code Camp</a>. All features are based on the spec and ueser stories</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,36 @@
+<my-navbar></my-navbar>
+
+<div class="container">
+    <h1 ng-if="!userProfile">Your Pins:</h1>
+    <h1 ng-if="userProfile">{{tgUser.name}}</h1>
+    <hr/>
+    <div class="row">
+        <div class="col-xs-12">
+            <div class="grid">
+                <div ng-if="!userProfile" class="grid-item grid-item-top">
+                    <button class="btn btn-primary" ng-click="addWin()">Add a Win</button>
+                    <p>Add a new win</p>
+                </div>                
+                <div ng-repeat="win in wins" class="grid-item">
+                    <div class="row">
+                        <div class="col-xs-12">
+                            <img src={{win.picUrl}}>
+                            <p>{{win.title}}</p>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-xs-2">
+                            <p ng-if='!userProfile'><button class="btn btn-sm btn-danger" ng-click="deleteWin(win)"><i class="fa fa-times"></i></button></p>
+                        </div>
+                        <div class="col-xs-5">
+                            <p><button ng-disabled="!userProfile" ng-click="like(win)"><i class="fa fa-heart" ng-class='{disable : isDisable()}'></i></button><span>{{win.hearts}}</span></p>
+                        </div>
+                        <div class="col-xs-5">
+                            <p><button ng-disabled="!userProfile" ng-click="reblog(win)"><i class="fa fa-refresh" ng-class='{disable : isDisable()}'></i></button><span>{{win.reblogs}}</span></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

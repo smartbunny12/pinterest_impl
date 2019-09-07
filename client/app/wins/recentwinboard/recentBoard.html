@@ -1,0 +1,32 @@
+<my-navbar></my-navbar>
+
+<div class="container">
+    <h1>Recent Pins:</h1>
+    <hr/>
+    <div class="row">
+        <div class="col-xs-12">
+            <div class="grid">
+                <div ng-repeat="win in wins" class="grid-item">
+                    <div class="row">
+                        <div class="col-xs-12">
+                            <img src={{win.picUrl}}>
+                            <p>{{win.title}}</p>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-xs-4" style="overflow:hidden">
+                            <p ng-show="showName(win.creater._id)">You</p>
+                            <p ng-hide="showName(win.creater._id)"><a href="" ng-click="getUserUrl(win.creater._id)">{{win.creater.name}}</a></p>
+                        </div>
+                        <div class="col-xs-4">
+                            <p><button ng-disabled="win.creater._id==currentUser._id" ng-click="like(win)"><i ng-class='{disable : win.creater._id==currentUser._id}' class="fa fa-heart"></i></button><span>{{win.hearts}}</span></p>
+                        </div>
+                        <div class="col-xs-4">
+                            <p><button ng-disabled="win.creater._id==currentUser._id" ng-click="reblog(win)"><i ng-class='{disable : win.creater._id==currentUser._id}' class="fa fa-refresh"></i></button><span>{{win.reblogs}}</span></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

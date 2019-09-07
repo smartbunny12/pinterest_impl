@@ -1,0 +1,111 @@
+body {
+    background-color: #2E2E2E;
+    color : #FFFFFF;
+}
+
+
+.mainpage { 
+    width : 95% !important;
+    
+}
+
+.picCover {
+    background-image : url("http://cdn.lookanimals.com/pictures/wallpaperstock.net/fishing-in-the-sea_wallpapers_18181_1600x1200.jpg");
+    background-size : 100% 100%;
+    background-repeat: no-repeat;
+    
+    height :100vh;
+    text-align : center;
+    color: #FFFFFF;
+}
+
+.picCover .text {
+    position : relative;
+    padding-top : 40vh;
+}
+
+.picCover p {
+    font-size: 40px;
+}
+
+.picCover h1 {
+    font-size : 100px;
+}
+
+.navbar {
+    background-color : #F9F8F8;
+}
+
+.navbar button, .navbar a:hover {
+    color: #000000 !important;
+}
+
+.navbar-nav > .active > a {
+    background-color : #F2F2F2 !important;
+    color : #000000 !important;
+}
+
+.nav .open>a, .nav .open>a:hover, .nav .open>a:focus {
+   background-color:transparent !important;
+}
+
+.dropdown-toggle {
+    color : #000000 !important;
+}
+
+.grid-item {
+    background-color : #E1E0E0;
+    width: 22%;
+    padding : 3px;
+    margin : 2px;
+    float: left;
+    /*padding : 10%;*/
+}
+
+.grid-item-top {
+    background-color : #E1E0E0;
+    width: 20%;
+    padding-left : 3%;
+    padding-top : 3%;
+    /*padding : 10%;*/
+}
+
+.grid-item img {
+    max-width : 100%;
+    display : block;
+}
+
+
+.grid-item .fa-heart, .grid-item .fa-refresh {
+    color : red;
+}
+
+.grid-item .disable {
+    color : black;
+}
+
+.grid p {
+    color : #000000;
+}
+
+.modalholder {
+    color : #000000;
+}
+
+.modalholder .picholder  {
+    width : 100% !important;
+    height : 50%;
+    border : 1px solid black !important;
+}
+
+.picholder img {
+    width : 100%;
+    height : 100%;
+}
+
+footer {
+    background-color : #D8D8D8;
+    color : #112BAE;
+    position : relative;
+    bottom : 0px;
+}
