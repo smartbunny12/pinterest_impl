@@ -28,7 +28,7 @@
     "jquery-bridget": "^2.0.0",
     "jsonwebtoken": "^7.0.1",
     "masonry": "0.0.2",
-    "mongoose": "^4.5.1",
+    "mongoose": "^5.7.8",
     "outlayer": "^2.1.0",
     "passport": "^0.3.2",
     "passport-local": "^1.0.0",
